@@ -9,7 +9,7 @@ namespace Syku.SOA.Provider
 
         public static IWebHost BuildWebHost(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
-                .UseUrls(Urls.Provider)
+                .UseUrls(Urls.Service)
                 .UseStartup<Startup>()
                 .Build();
     }

@@ -2,8 +2,8 @@
 {
     public static class Urls
     {
-        public static string Main = "http://localhost:6788";
+        public static string Website = "http://localhost:6788";
 
-        public static string Provider = "http://localhost:6789";
+        public static string Service = "http://localhost:6789";
     }
 }
