@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 
-namespace Syku.SOA
+namespace Syku.SOA.Provider
 {
     public class Program
     {
@@ -9,7 +9,7 @@ namespace Syku.SOA
 
         public static IWebHost BuildWebHost(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
-                .UseUrls(Urls.Main)
+                .UseUrls(Urls.Provider)
                 .UseStartup<Startup>()
                 .Build();
     }

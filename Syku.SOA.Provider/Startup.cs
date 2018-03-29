@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Syku.SOA
+namespace Syku.SOA.Provider
 {
     public class Startup
     {
@@ -13,8 +13,8 @@ namespace Syku.SOA
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddScoped<IStatisticsAsyncService, StatisticsRestService>();
             services.AddMvc();
+            services.AddScoped<IStatisticsService, StatisticsService>();
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env) => app.UseMvc();
